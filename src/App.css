@@ -1,0 +1,36 @@
+
+.details-wrapper{
+  margin:30px auto;
+  width:600px;
+  display:flex;
+  flex-direction: row;
+}
+
+.details-poster{
+  width: 300px;
+  margin-right:8px;
+}
+.details-title{
+  display:inline;
+  font-size:1.5em;
+  font-weight:bold;
+}
+.details-rating{
+  display:inline;
+  font-size:1.2em;
+  font-weight:bold;
+  margin-left: 12px;
+  color:#08c;
+}
+.details-tags div{
+  display: inline-block;
+  margin: 3px;
+  padding: 3px;
+  border-radius: 4px;
+  background-color: #aaa;
+}
+.details-header{
+  margin-top: 8px;
+  font-weight: bold;
+  font-size:1.2em;
+}
