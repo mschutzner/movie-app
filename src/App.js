@@ -1,12 +1,25 @@
-import logo from './logo.svg';
+import { useState, useEffect } from "react";
 import MovieDetails from './components/MovieDetails'
 import './App.css';
-import { movieData } from './avengers'
+import MovieList from "./components/MovieList";
+import SearchForm from "./components/SearchForm";
 
 function App() {
+  const [movieList, setMovieList] = useState([]);
+  const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState(null);
+
   return (
     <div className="App">
-      <MovieDetails posterUrl={movieData.Poster} title={movieData.Title} rated={movieData.Rated} runtime={movieData.Runtime} genre={movieData.Genre} plot={movieData.Plot} actors={movieData.Actors} rating={movieData.imdbRating}/>
+      <SearchForm
+        setMovieList={setMovieList}
+        setIsLoading={setIsLoading}
+        setError={setError}
+      />
+      <MovieList
+        movieList={movieList}
+        isLoading={isLoading}
+      />
     </div>
   );
 }

@@ -34,3 +34,68 @@
   font-weight: bold;
   font-size:1.2em;
 }
+
+
+
+.movie-list{
+  margin: 30px auto;
+  display: flex;
+  max-width:100%;
+  min-height:150px;
+  overflow-x: auto;
+}
+
+
+.movie-card{
+  margin:15px;
+  padding:4px;
+  border: 1px solid #000;
+}
+.movie-card-poster{
+  width: 150px;
+}
+.movie-card-title{
+  width: 150px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.movie-card-tag{
+  border-radius: 3px;
+  padding:4px;
+  background-color: #f6cdd1;
+  border: 1px solid #dc3545;
+  color: #dc3545;
+  display:inline-block;
+  text-transform: capitalize;
+  font-size: 0.8em;
+}
+
+
+.search-wrapper{
+  display: flex;
+  justify-content: center;
+  margin: 250px auto 30px;
+}
+.search-bar{
+  width:100%;
+  max-width: 400px;
+  font-size:1.5em;
+  border-radius: 0.5em;
+  margin-right: 5px;
+  margin-left:20px;
+  padding:0.5em;
+}
+.search-button{
+  font-size:1.5em;
+  border-radius: 0.5em;
+  padding:0.5em;
+  margin-right: 20px;
+}
+
+
+
+.loading-spinner-wrapper{
+  display:flex;
+  justify-content: center;
+}
