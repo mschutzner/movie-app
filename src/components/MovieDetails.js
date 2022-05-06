@@ -1,26 +1,25 @@
-export default function MovieDetails(props){
-    const { posterUrl, title, rated, runtime, genre, plot, actors, rating } = props;
-
+export default function MovieDetails({movie}){
+    const { Poster, Title, Rated, Runtime, Genre, Plot, Actors, Rating } = movie;
     return (
         <div className="details-wrapper">
-            <img src={posterUrl} className="details-poster" />
+            <img src={Poster} className="details-poster" />
             <div className="details-right">
                 <div className="details-top">
-                    <div className="details-title">{title}</div>
-                    <div className="details-rating">{rating}</div>
+                    <div className="details-title">{Title}</div>
+                    <div className="details-rating">{Rating}</div>
                 </div>
                 <div className="details-tags">
-                    <div className="details-rated">{rated}</div>
-                    <div className="details-runtime">{runtime}</div>
-                    <div className="details-genre">{genre}</div>
+                    <div className="details-rated">{Rated}</div>
+                    <div className="details-runtime">{Runtime}</div>
+                    <div className="details-genre">{Genre}</div>
                 </div>
                 <div className="details-plot">
                     <div className="details-header">Plot</div>
-                    {plot}
+                    {Plot}
                 </div>
                 <div className="details-actors">
                     <div className="details-header">Actors</div>
-                    {actors}
+                    {Actors}
                 </div>
             </div>
         </div>
